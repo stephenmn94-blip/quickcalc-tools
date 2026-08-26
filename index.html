@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>QuickCalc Tools - 60+ Free Online Calculators & Converters</title>
+<meta name="description" content="QuickCalc Tools offers 60+ free online calculators and converters for finance, math, dates, time, health, education and everyday calculations. Fast, simple and mobile-friendly.">
+<meta name="robots" content="index, follow">
+<meta name="author" content="QuickCalc Tools">
+<meta name="theme-color" content="#635bff">
+<link rel="canonical" href="https://quickcalctools.github.io/quickcalc-tools/">
+<meta property="og:title" content="QuickCalc Tools - Free Online Calculators">
+<meta property="og:description" content="60+ free calculators and converters for everyday use.">
+<meta property="og:type" content="website">
+
+<style>
+:root{--p:#635bff;--p2:#8b5cf6;--ink:#172033;--muted:#667085;--bg:#f5f7fb;--card:#fff;--line:#e5e7ef;--ok:#087f5b}
+*{box-sizing:border-box}html{scroll-behavior:smooth}
+body{margin:0;font-family:Inter,Arial,sans-serif;background:var(--bg);color:var(--ink);line-height:1.55}
+header{background:linear-gradient(135deg,#5146e5,#7c3aed 55%,#a855f7);color:#fff;text-align:center;padding:48px 16px 72px}
+.hero{max-width:900px;margin:auto}.badge{display:inline-block;background:#ffffff1f;border:1px solid #ffffff45;padding:6px 12px;border-radius:999px;font-size:13px;margin-bottom:14px}
+h1{font-size:clamp(32px,7vw,55px);line-height:1.05;margin:0 0 14px;letter-spacing:-1.8px}
+.hero p{max-width:700px;margin:auto;opacity:.94;font-size:17px}
+.wrap{width:min(1180px,94%);margin:-36px auto 0;position:relative}
+.search{background:#fff;border:1px solid var(--line);padding:16px;border-radius:18px;box-shadow:0 12px 30px #10182812;margin-bottom:22px}
+.search input{margin:0}
+input,select{width:100%;padding:12px 13px;border:1px solid #d7dae5;border-radius:10px;background:#fff;font-size:14px;outline:none}
+input:focus,select:focus{border-color:var(--p);box-shadow:0 0 0 3px #635bff18}
+.filters{display:flex;gap:8px;overflow:auto;padding:2px 0 12px}
+.filters button{white-space:nowrap;width:auto;margin:0;padding:9px 13px}
+button{border:0;border-radius:10px;padding:12px 14px;background:var(--p);color:#fff;font-weight:700;cursor:pointer}
+button:hover{filter:brightness(.94)}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(275px,1fr));gap:18px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:20px;box-shadow:0 8px 25px #1018280a}
+.icon{width:42px;height:42px;display:grid;place-items:center;border-radius:12px;background:#efefff;font-size:21px;margin-bottom:10px}
+.card h2{font-size:19px;margin:0 0 4px}.desc{font-size:13px;color:var(--muted);margin:0 0 14px}
+label{display:block;font-size:12px;font-weight:700;margin:9px 0 4px}
+.calc{width:100%;margin-top:12px}
+.result{margin-top:11px;min-height:44px;padding:11px;border-radius:10px;background:#f4f3ff;font-size:13px;font-weight:700;color:#303050}
+.result.ok{background:#ecfdf3;color:var(--ok)}
+.info{background:#fff;border:1px solid var(--line);border-radius:18px;padding:25px;margin:25px 0}
+.info h2{margin-top:0}.info p{color:var(--muted)}
+footer{text-align:center;color:var(--muted);padding:38px 15px;font-size:13px}
+.hidden{display:none!important}
+@media(max-width:600px){header{padding:42px 15px 64px}.wrap{width:95%}.grid{grid-template-columns:1fr}.card{padding:18px}}
+</style>
+
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebSite","name":"QuickCalc Tools","description":"Free online calculators and converters.","url":"https://quickcalctools.github.io/quickcalc-tools/"}
+</script>
+</head>
+<body>
+
+<header>
+<div class="hero">
+<div class="badge">60+ Free Tools • No Signup • Mobile Friendly</div>
+<h1>QuickCalc Tools</h1>
+<p>Fast, simple and free online calculators for finance, math, dates, time, health, education and everyday conversions.</p>
+</div>
+</header>
+
+<main class="wrap">
+<section class="search">
+<input id="search" type="search" placeholder="Search calculators... e.g. loan, BMI, percentage" oninput="filterTools()">
+<div class="filters">
+<button onclick="setCategory('All')">All</button>
+<button onclick="setCategory('Finance')">Finance</button>
+<button onclick="setCategory('Math')">Math</button>
+<button onclick="setCategory('Date & Time')">Date & Time</button>
+<button onclick="setCategory('Converters')">Converters</button>
+<button onclick="setCategory('Health')">Health</button>
+<button onclick="setCategory('Education')">Education</button>
+</div>
+</section>
+
+<section id="tools" class="grid" aria-label="Free calculators"></section>
+
+<section class="info">
+<h2>Free Online Calculators & Converters</h2>
+<p>QuickCalc Tools brings together useful calculators for everyday decisions and quick calculations. Choose a tool above, enter your values, and get an instant result.</p>
+<p>Our collection covers finance, mathematics, dates and time, unit conversion, health and education. The tools are designed to work directly in your browser without an account.</p>
+</section>
+</main>
+
+<footer>© 2026 QuickCalc Tools · Free Online Calculators & Converters</footer>
+
+<script>
+const tools=[
+/* Finance */
+["percentage","%","Percentage Calculator","Finance","Find a percentage of a number.",["Percentage (%)","Number"],["number","number"]],
+["discount","🏷️","Discount Calculator","Finance","Calculate savings and final sale price.",["Original price","Discount (%)"],["number","number"]],
+["tip","💵","Tip Calculator","Finance","Calculate a tip and total bill.",["Bill amount","Tip (%)"],["number","number"]],
+["split","👥","Bill Split Calculator","Finance","Split a bill equally between people.",["Bill amount","Number of people"],["number","number"]],
+["salesTax","🧾","Sales Tax Calculator","Finance","Calculate tax and total price.",["Price","Tax (%)"],["number","number"]],
+["markup","📈","Markup Calculator","Finance","Calculate markup amount and selling price.",["Cost","Markup (%)"],["number","number"]],
+["margin","📊","Profit Margin Calculator","Finance","Calculate profit and profit margin.",["Cost","Selling price"],["number","number"]],
+["simpleInterest","💰","Simple Interest Calculator","Finance","Calculate simple interest and total.",["Principal","Rate (%)","Time (years)"],["number","number","number"]],
+["compoundInterest","📈","Compound Interest Calculator","Finance","Estimate compound growth.",["Principal","Annual rate (%)","Years","Compounds/year"],["number","number","number","number"]],
+["loan","🏦","Loan Payment Calculator","Finance","Estimate monthly loan payment.",["Loan amount","Annual interest (%)","Term (years)"],["number","number","number"]],
+["savings","🎯","Savings Goal Calculator","Finance","Estimate monthly savings needed for a goal.",["Savings goal","Current savings","Annual interest (%)","Years"],["number","number","number","number"]],
+["hourly","⏰","Hourly Pay Calculator","Finance","Convert hourly pay into weekly, monthly and yearly estimates.",["Hourly rate","Hours per week"],["number","number"]],
+["overtime","⌛","Overtime Pay Calculator","Finance","Estimate overtime earnings.",["Hourly rate","Regular hours","Overtime hours","Overtime multiplier"],["number","number","number","number"]],
+["commission","🤝","Commission Calculator","Finance","Calculate commission and total earnings.",["Sales amount","Commission (%)"],["number","number"]],
+
+/* Math */
+["ratio","⚖️","Ratio Calculator","Math","Simplify and compare two numbers.",["First number","Second number"],["number","number"]],
+["proportion","🔢","Proportion Calculator","Math","Solve A:B = C:X.",["A","B","C"],["number","number","number"]],
+["average","📐","Average Calculator","Math","Calculate the average of numbers.",["Numbers (comma separated)"],["text"]],
+["weighted","⚖️","Weighted Average Calculator","Math","Calculate a weighted average.",["Values (comma separated)","Weights (comma separated)"],["text","text"]],
+["fractionDecimal","➗","Fraction to Decimal","Math","Convert a fraction to decimal.",["Numerator","Denominator"],["number","number"]],
+["fractionPercent","%","Fraction to Percent","Math","Convert a fraction to percentage.",["Numerator","Denominator"],["number","number"]],
+["power","xʸ","Power Calculator","Math","Calculate a number raised to a power.",["Base","Exponent"],["number","number"]],
+["sqrt","√","Square Root Calculator","Math","Find the square root of a number.",["Number"],["number"]],
+["factorial","!","Factorial Calculator","Math","Calculate the factorial of a whole number.",["Whole number (0-170)"],["number"]],
+["gcd","GCD","GCD Calculator","Math","Find the greatest common divisor.",["First integer","Second integer"],["number","number"]],
+["lcm","LCM","LCM Calculator","Math","Find the least common multiple.",["First integer","Second integer"],["number","number"]],
+["random","🎲","Random Number Generator","Math","Generate a random number in a range.",["Minimum","Maximum"],["number","number"]],
+["triangle","△","Triangle Area Calculator","Math","Calculate triangle area.",["Base","Height"],["number","number"]],
+["circle","⭕","Circle Calculator","Math","Calculate circle area and circumference.",["Radius"],["number"]],
+["rectangle","▭","Rectangle Calculator","Math","Calculate area and perimeter.",["Length","Width"],["number","number"]],
+["cube","🧊","Cube Volume Calculator","Math","Calculate cube volume and surface area.",["Side length"],["number"]],
+["cylinder","🥫","Cylinder Calculator","Math","Calculate cylinder volume and surface area.",["Radius","Height"],["number","number"]],
+["sphere","⚪","Sphere Calculator","Math","Calculate sphere volume and surface area.",["Radius"],["number"]],
+
+/* Date & Time */
+["age","🎂","Age Calculator","Date & Time","Calculate age from a birth date.",["Date of birth"],["date"]],
+["dateDiff","📅","Date Difference Calculator","Date & Time","Find days between two dates.",["Start date","End date"],["date","date"]],
+["addDays","➕","Add Days to Date","Date & Time","Add or subtract days from a date.",["Start date","Days (use negative to subtract)"],["date","number"]],
+["weekday","📆","Day of Week Calculator","Date & Time","Find the weekday for a date.",["Date"],["date"]],
+["daysYear","🗓️","Days in Year Calculator","Date & Time","Check whether a year has 365 or 366 days.",["Year"],["number"]],
+["timeDuration","⏱️","Time Duration Calculator","Date & Time","Find duration between two times.",["Start time","End time"],["time","time"]],
+["addTime","⏰","Add Time Calculator","Date & Time","Add hours and minutes to a time.",["Start time","Hours","Minutes"],["time","number","number"]],
+
+/* Converters */
+["length","📏","Length Converter","Converters","Convert meters to common length units.",["Meters"],["number"]],
+["weight","⚖️","Weight Converter","Converters","Convert kilograms to common weight units.",["Kilograms"],["number"]],
+["temperature","🌡️","Temperature Converter","Converters","Convert Celsius to Fahrenheit and Kelvin.",["Celsius"],["number"]],
+["area","🔲","Area Converter","Converters","Convert square meters to common area units.",["Square meters"],["number"]],
+["volume","🧪","Volume Converter","Converters","Convert liters to gallons and cups.",["Liters"],["number"]],
+["speed","🚗","Speed Converter","Converters","Convert km/h to mph and m/s.",["Kilometers per hour"],["number"]],
+["data","💾","Data Storage Converter","Converters","Convert gigabytes to megabytes and bytes.",["Gigabytes"],["number"]],
+["energy","⚡","Energy Converter","Converters","Convert kilowatt-hours to joules.",["Kilowatt-hours"],["number"]],
+["power","🔌","Power Converter","Converters","Convert kilowatts to watts and horsepower.",["Kilowatts"],["number"]],
+["pressure","🧯","Pressure Converter","Converters","Convert bar to psi and pascals.",["Bar"],["number"]],
+["fuel","⛽","Fuel Economy Converter","Converters","Convert L/100km to US MPG.",["Liters per 100 km"],["number"]],
+
+/* Health */
+["bmi","⚕️","BMI Calculator","Health","Estimate body mass index.",["Weight (kg)","Height (cm)"],["number","number"]],
+["bmr","🔥","BMR Calculator","Health","Estimate basal metabolic rate.",["Weight (kg)","Height (cm)","Age","Sex (M/F)"],["number","number","number","text"]],
+["calories","🏃","Calories Burned Calculator","Health","Estimate calories burned during activity.",["Weight (kg)","Minutes","MET value"],["number","number","number"]],
+["pace","🏃‍♂️","Running Pace Calculator","Health","Calculate average running pace.",["Distance (km)","Time (minutes)"],["number","number"]],
+
+/* Education */
+["grade","🎓","Grade Percentage Calculator","Education","Calculate percentage from points.",["Points earned","Total points"],["number","number"]],
+["gpa","📚","GPA Calculator","Education","Estimate GPA from grades and credits.",["Grade points (comma separated)","Credits (comma separated)"],["text","text"]],
+["study","📖","Study Time Calculator","Education","Divide study time across subjects.",["Total study hours","Number of subjects"],["number","number"]]
+];
+
+let activeCategory="All";
+
+function makeCard(t,i){
+ const [id,icon,name,cat,desc,labels,types]=t;
+ const card=document.createElement("article");
+ card.className="card tool";
+ card.dataset.category=cat;
+ card.dataset.search=(name+" "+desc+" "+cat).toLowerCase();
+ let fields="";
+ labels.forEach((l,j)=>{
+   fields+=`<label for="${id}_${j}">${l}</label><input id="${id}_${j}" type="${types[j]}" ${types[j]==="number"?'step="any"':''} placeholder="${types[j]==='text'?'e.g. 10, 20, 30':''}">`;
+ });
+ card.innerHTML=`<div class="icon">${icon}</div><h2>${name}</h2><p class="desc">${desc}</p>${fields}<button class="calc" onclick="runTool('${id}',${i})">Calculate</button><div class="result" id="res_${id}" aria-live="polite">Your result will appear here.</div>`;
+ return card;
+}
+const toolBox=document.getElementById("tools");
+tools.forEach((t,i)=>toolBox.appendChild(makeCard(t,i)));
+
+function nums(id,n){
+ const a=[];for(let i=0;i<n;i++)a.push(Number(document.getElementById(id+"_"+i).value));
+ return a;
+}
+function ok(id,msg){const e=document.getElementById("res_"+id);e.textContent=msg;e.className="result ok"}
+function err(id,msg){const e=document.getElementById("res_"+id);e.textContent=msg;e.className="result"}
+
+function runTool(id){
+ try{
+  switch(id){
+   case"percentage":{let[a,b]=nums(id,2);if(!isFinite(a)||!isFinite(b))return err(id,"Enter both values.");ok(id,`${a}% of ${b} = ${(a*b/100).toLocaleString(undefined,{maximumFractionDigits:4})}`);break}
+   case"discount":{let[p,d]=nums(id,2);if(!isFinite(p)||!isFinite(d)||d<0||d>100)return err(id,"Enter a valid price and 0–100% discount.");let s=p*d/100;ok(id,`Savings: $${s.toFixed(2)} · Final price: $${(p-s).toFixed(2)}`);break}
+   case"tip":{let[b,t]=nums(id,2);if(!isFinite(b)||!isFinite(t))return err(id,"Enter both values.");let x=b*t/100;ok(id,`Tip: $${x.toFixed(2)} · Total: $${(b+x).toFixed(2)}`);break}
+   case"split":{let[b,n]=nums(id,2);if(!isFinite(b)||!isFinite(n)||n<=0)return err(id,"Enter a valid bill and number of people.");ok(id,`Each person pays: $${(b/n).toFixed(2)}`);break}
+   case"salesTax":{let[p,t]=nums(id,2);if(!isFinite(p)||!isFinite(t))return err(id,"Enter both values.");let x=p*t/100;ok(id,`Tax: $${x.toFixed(2)} · Total: $${(p+x).toFixed(2)}`);break}
+   case"markup":{let[c,m]=nums(id,2);if(!isFinite(c)||!isFinite(m))return err(id,"Enter both values.");let x=c*m/100;ok(id,`Markup: $${x.toFixed(2)} · Selling price: $${(c+x).toFixed(2)}`);break}
+   case"margin":{let[c,s]=nums(id,2);if(!isFinite(c)||!isFinite(s)||s===0)return err(id,"Enter valid values.");let p=s-c;ok(id,`Profit: $${p.toFixed(2)} · Margin: ${(p/s*100).toFixed(2)}%`);break}
+   case"simpleInterest":{let[p,r,t]=nums(id,3);if([p,r,t].some(x=>!isFinite(x)))return err(id,"Enter all values.");let x=p*r*t/100;ok(id,`Interest: $${x.toFixed(2)} · Total: $${(p+x).toFixed(2)}`);break}
+   case"compoundInterest":{let[p,r,t,n]=nums(id,4);if([p,r,t,n].some(x=>!isFinite(x))||n<=0)return err(id,"Enter valid values.");let a=p*Math.pow(1+r/100/n,n*t);ok(id,`Final amount: $${a.toFixed(2)} · Interest: $${(a-p).toFixed(2)}`);break}
+   case"loan":{let[P,r,y]=nums(id,3);if([P,r,y].some(x=>!isFinite(x))||y<=0)return err(id,"Enter valid values.");let m=r/100/12,n=y*12,pay=r===0?P/n:P*m*Math.pow(1+m,n)/(Math.pow(1+m,n)-1);ok(id,`Estimated monthly payment: $${pay.toFixed(2)}`);break}
+   case"savings":{let[g,c,r,y]=nums(id,4);if([g,c,r,y].some(x=>!isFinite(x))||y<=0)return err(id,"Enter valid values.");let n=y*12,rm=r/100/12,need=g-c,pm=rm===0?need/n:need*rm/(Math.pow(1+rm,n)-1);ok(id,`Estimated monthly saving: $${Math.max(0,pm).toFixed(2)}`);break}
+   case"hourly":{let[r,h]=nums(id,2);if(!isFinite(r)||!isFinite(h))return err(id,"Enter both values.");ok(id,`Weekly: $${(r*h).toFixed(2)} · Annual: $${(r*h*52).toFixed(2)}`);break}
+   case"overtime":{let[r,reg,ot,m]=nums(id,4);if([r,reg,ot,m].some(x=>!isFinite(x)))return err(id,"Enter all values.");ok(id,`Estimated pay: $${(r*reg+r*m*ot).toFixed(2)}`);break}
+   case"commission":{let[s,c]=nums(id,2);if(!isFinite(s)||!isFinite(c))return err(id,"Enter both values.");let x=s*c/100;ok(id,`Commission: $${x.toFixed(2)} · Total: $${(s+x).toFixed(2)}`);break}
+   case"ratio":{let[a,b]=nums(id,2);if(!isFinite(a)||!isFinite(b)||b===0)return err(id,"Enter valid values.");let g=gcd(Math.abs(Math.round(a)),Math.abs(Math.round(b)));ok(id,`Simplified ratio: ${a/g}:${b/g}`);break}
+   case"proportion":{let[a,b,c]=nums(id,3);if(!isFinite(a)||!isFinite(b)||!isFinite(c)||a===0)return err(id,"Enter valid values.");ok(id,`X = ${(b*c/a).toFixed(4)}`);break}
+   case"average":{let s=document.getElementById(id+"_0").value.split(",").map(Number).filter(Number.isFinite);if(!s.length)return err(id,"Enter numbers separated by commas.");ok(id,`Average: ${(s.reduce((a,b)=>a+b,0)/s.length).toFixed(4)}`);break}
+   case"weighted":{let v=document.getElementById(id+"_0").value.split(",").map(Number),w=document.getElementById(id+"_1").value.split(",").map(Number);if(v.length!==w.length||!v.length||v.some(x=>!isFinite(x))||w.some(x=>!isFinite(x))||w.reduce((a,b)=>a+b,0)===0)return err(id,"Use equal-length valid lists.");ok(id,`Weighted average: ${(v.reduce((s,x,i)=>s+x*w[i],0)/w.reduce((a,b)=>a+b,0)).toFixed(4)}`);break}
+   case"fractionDecimal":{let[a,b]=nums(id,2);if(!isFinite(a)||!isFinite(b)||b===0)return err(id,"Denominator cannot be zero.");ok(id,`Decimal: ${(a/b).toFixed(6)}`);break}
+   case"fractionPercent":{let[a,b]=nums(id,2);if(!isFinite(a)||!isFinite(b)||b===0)return err(id,"Denominator cannot be zero.");ok(id,`Percentage: ${(a/b*100).toFixed(2)}%`);break}
+   case"power":{let[a,b]=nums(id,2);if(!isFinite(a)||!isFinite(b))return err(id,"Enter both values.");ok(id,`Result: ${Math.pow(a,b).toLocaleString(undefined,{maximumFractionDigits:8})}`);break}
+   case"sqrt":{let[a]=nums(id,1);if(!isFinite(a)||a<0)return err(id,"Enter a non-negative number.");ok(id,`Square root: ${Math.sqrt(a).toFixed(6)}`);break}
+   case"factorial":{let[a]=nums(id,1);if(!Number.isInteger(a)||a<0||a>170)return err(id,"Enter a whole number from 0 to 170.");let f=1;for(let i=2;i<=a;i++)f*=i;ok(id,`${a}! = ${f.toLocaleString()}`);break}
+   case"gcd":{let[a,b]=nums(id,2);ok(id,`GCD: ${gcd(Math.round(a),Math.round(b))}`);break}
+   case"lcm":{let[a,b]=nums(id,2);if(!a||!b)return err(id,"Enter non-zero integers.");ok(id,`LCM: ${Math.abs(a*b)/gcd(Math.round(a),Math.round(b))}`);break}
+   case"random":{let[a,b]=nums(id,2);if(!isFinite(a)||!isFinite(b)||a>b)return err(id,"Minimum must be less than maximum.");ok(id,`Random number: ${Math.floor(Math.random()*(b-a+1))+a}`);break}
+   case"triangle":{let[a,b]=nums(id,2);ok(id,`Area: ${(a*b/2).toFixed(2)} square units`);break}
+   case"circle":{let[r]=nums(id,1);if(r<0||!isFinite(r))return err(id,"Enter a valid radius.");ok(id,`Area: ${(Math.PI*r*r).toFixed(2)} · Circumference: ${(2*Math.PI*r).toFixed(2)}`);break}
+   case"rectangle":{let[a,b]=nums(id,2);ok(id,`Area: ${(a*b).toFixed(2)} · Perimeter: ${(2*(a+b)).toFixed(2)}`);break}
+   case"cube":{let[a]=nums(id,1);if(a<0||!isFinite(a))return err(id,"Enter a valid side.");ok(id,`Volume: ${(a**3).toFixed(2)} · Surface area: ${(6*a*a).toFixed(2)}`);break}
+   case"cylinder":{let[r,h]=nums(id,2);if(r<0||h<0)return err(id,"Enter positive values.");ok(id,`Volume: ${(Math.PI*r*r*h).toFixed(2)} · Surface area: ${(2*Math.PI*r*(r+h)).toFixed(2)}`);break}
+   case"sphere":{let[r]=nums(id,1);if(r<0)return err(id,"Enter a valid radius.");ok(id,`Volume: ${((4/3)*Math.PI*r**3).toFixed(2)} · Surface area: ${(4*Math.PI*r*r).toFixed(2)}`);break}
+   case"age":{let d=document.getElementById(id+"_0").value;if(!d)return err(id,"Enter your birth date.");let b=new Date(d+"T00:00:00"),n=new Date();if(b>n)return err(id,"Birth date cannot be in the future.");let y=n.getFullYear()-b.getFullYear(),m=n.getMonth()-b.getMonth(),day=n.getDate()-b.getDate();if(day<0){m--;day+=new Date(n.getFullYear(),n.getMonth(),0).getDate()}if(m<0){y--;m+=12}ok(id,`Age: ${y} years, ${m} months, ${day} days`);break}
+   case"dateDiff":{let a=new Date(document.getElementById(id+"_0").value+"T00:00:00"),b=new Date(document.getElementById(id+"_1").value+"T00:00:00");if(isNaN(a)||isNaN(b))return err(id,"Enter both dates.");ok(id,`Difference: ${Math.round(Math.abs(b-a)/86400000).toLocaleString()} days`);break}
+   case"addDays":{let d=document.getElementById(id+"_0").value,n=Number(document.getElementById(id+"_1").value);if(!d||!isFinite(n))return err(id,"Enter a date and number of days.");let x=new Date(d+"T00:00:00");x.setDate(x.getDate()+n);ok(id,`Result date: ${x.toLocaleDateString(undefined,{year:"numeric",month:"long",day:"numeric"})}`);break}
+   case"weekday":{let d=document.getElementById(id+"_0").value;if(!d)return err(id,"Enter a date.");let x=new Date(d+"T00:00:00");ok(id,x.toLocaleDateString(undefined,{weekday:"long",year:"numeric",month:"long",day:"numeric"}));break}
+   case"daysYear":{let[y]=nums(id,1);if(!Number.isInteger(y))return err(id,"Enter a valid year.");ok(id,`${y} has ${new Date(y,1,29).getMonth()===1?366:365} days.`);break}
+   case"timeDuration":{let a=document.getElementById(id+"_0").value,b=document.getElementById(id+"_1").value;if(!a||!b)return err(id,"Enter both times.");let A=a.split(":").map(Number),B=b.split(":").map(Number),x=A[0]*60+A[1],y=B[0]*60+B[1];if(y<x)y+=1440;ok(id,`Duration: ${Math.floor((y-x)/60)}h ${(y-x)%60}m`);break}
+   case"addTime":{let t=document.getElementById(id+"_0").value,h=Number(document.getElementById(id+"_1").value),m=Number(document.getElementById(id+"_2").value);if(!t||!isFinite(h)||!isFinite(m))return err(id,"Enter all values.");let [H,M]=t.split(":").map(Number),x=(H*60+M+h*60+m+1440)%1440;ok(id,`Result time: ${String(Math.floor(x/60)).padStart(2,"0")}:${String(x%60).padStart(2,"0")}`);break}
+   case"length":{let[m]=nums(id,1);ok(id,`${m} m = ${(m/1000).toFixed(4)} km · ${(m*3.28084).toFixed(4)} ft · ${(m*39.3701).toFixed(2)} in`);break}
+   case"weight":{let[k]=nums(id,1);ok(id,`${k} kg = ${(k*2.20462).toFixed(2)} lb · ${(k*35.274).toFixed(2)} oz`);break}
+   case"temperature":{let[c]=nums(id,1);ok(id,`${c}°C = ${(c*9/5+32).toFixed(2)}°F · ${(c+273.15).toFixed(2)} K`);break}
+   case"area":{let[m]=nums(id,1);ok(id,`${m} m² = ${(m*10.7639).toFixed(2)} ft² · ${(m*1550.0031).toFixed(2)} in²`);break}
+   case"volume":{let[l]=nums(id,1);ok(id,`${l} L = ${(l*0.264172).toFixed(3)} US gal · ${(l*4.22675).toFixed(2)} cups`);break}
+   case"speed":{let[k]=nums(id,1);ok(id,`${k} km/h = ${(k/1.609344).toFixed(2)} mph · ${(k/3.6).toFixed(2)} m/s`);break}
+   case"data":{let[g]=nums(id,1);ok(id,`${g} GB = ${(g*1024).toFixed(2)} MB · ${(g*1024**3).toLocaleString()} bytes`);break}
+   case"energy":{let[k]=nums(id,1);ok(id,`${k} kWh = ${(k*3600000).toLocaleString()} joules`);break}
+   case"power":{let[k]=nums(id,1);ok(id,`${k} kW = ${(k*1000).toFixed(2)} W · ${(k*1.34102).toFixed(2)} hp`);break}
+   case"pressure":{let[b]=nums(id,1);ok(id,`${b} bar = ${(b*14.5038).toFixed(2)} psi · ${(b*100000).toLocaleString()} Pa`);break}
+   case"fuel":{let[l]=nums(id,1);if(l<=0)return err(id,"Enter a value greater than zero.");ok(id,`${l} L/100 km = ${(235.214583/l).toFixed(2)} US MPG`);break}
+   case"bmi":{let[w,h]=nums(id,2);if(w<=0||h<=0)return err(id,"Enter valid weight and height.");let b=w/((h/100)**2);ok(id,`BMI: ${b.toFixed(1)}`);break}
+   case"bmr":{let[w,h,a]=nums(id,3),s=document.getElementById(id+"_3").value.trim().toUpperCase();if([w,h,a].some(x=>!isFinite(x))||!["M","F"].includes(s))return err(id,"Enter weight, height, age and M or F.");let b=s==="M"?10*w+6.25*h-5*a+5:10*w+6.25*h-5*a-161;ok(id,`Estimated BMR: ${Math.round(b)} calories/day`);break}
+   case"calories":{let[w,min,met]=nums(id,3);if([w,min,met].some(x=>!isFinite(x)))return err(id,"Enter all values.");ok(id,`Estimated calories burned: ${Math.round(met*3.5*w/200*min)} kcal`);break}
+   case"pace":{let[d,t]=nums(id,2);if(d<=0||t<0)return err(id,"Enter valid distance and time.");let p=t/d;ok(id,`Average pace: ${Math.floor(p)} min ${Math.round((p%1)*60)} sec/km`);break}
+   case"grade":{let[a,b]=nums(id,2);if(!isFinite(a)||!isFinite(b)||b<=0)return err(id,"Enter valid points.");ok(id,`Percentage: ${(a/b*100).toFixed(2)}%`);break}
+   case"gpa":{let v=document.getElementById(id+"_0").value.split(",").map(Number),c=document.getElementById(id+"_1").value.split(",").map(Number);if(v.length!==c.length||!v.length||v.some(x=>!isFinite(x))||c.some(x=>!isFinite(x))||c.reduce((a,b)=>a+b,0)<=0)return err(id,"Enter equal valid lists.");ok(id,`Estimated GPA: ${(v.reduce((s,x,i)=>s+x*c[i],0)/c.reduce((a,b)=>a+b,0)).toFixed(2)}`);break}
+   case"study":{let[h,n]=nums(id,2);if(h<=0||n<=0)return err(id,"Enter valid values.");ok(id,`Study about ${(h/n).toFixed(2)} hours per subject.`);break}
+  }
+ }catch(e){err(id,"Please check your inputs.")}
+}
+function gcd(a,b){a=Math.abs(a);b=Math.abs(b);while(b){[a,b]=[b,a%b]}return a||1}
+function setCategory(c){activeCategory=c;filterTools()}
+function filterTools(){
+ const q=document.getElementById("search").value.toLowerCase().trim();
+ document.querySelectorAll(".tool").forEach(x=>{
+   x.classList.toggle("hidden",!(activeCategory==="All"||x.dataset.category===activeCategory)||!x.dataset.search.includes(q));
+ });
+}
+</script>
+</body>
+</html>
